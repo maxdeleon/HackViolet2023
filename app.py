@@ -4,13 +4,13 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 import dash_bootstrap_components as dbc
-from dash import html, dcc, callback, Input, Output, State
+from dash import html, dcc, callback, Input, Output, State, ctx
 
+# import plotly.express as px
+# df = px.data.gapminder().query("year == 2007")
 
-app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP,'./assets/']) #__name__, use_pages=True, 
-#app._favicon = "./favicon.ico"
-
-
+#,'./assets/'
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP]) #__name__, use_pages=True, 
 
 fig = go.Figure(go.Scattergeo())
 
@@ -21,9 +21,9 @@ fig.update_layout(
                 width=900,
                 margin={
                         "r":0,
-                        "t":0,
+                        "t":5,
                         "l":0,
-                        "b":0
+                        "b":5
                         })
 
 fig.update_layout({
@@ -48,66 +48,98 @@ storage = html.Div([
     dcc.Store(id="Zpos", storage_type='session')
 ])
 
+
+
 app.layout = html.Div([
     # navbar
     dbc.NavbarSimple( 
         children=[
-            dcc.Input(id="X", type="number"),
-            dcc.Input(id="Y", type="number"),
-            dcc.Input(id="Z", type="number"),
-            html.Div(id='coords')
+            dcc.Input(id="X", type="number",placeholder=1),
+            dcc.Input(id="Y", type="number",placeholder=1),
+            dcc.Input(id="Z", type="number",placeholder=1),
+            html.Button('up', id='up_btn', n_clicks=0),
+            html.Button('down', id='d_btn', n_clicks=0),
+            html.Button('left', id='l_btn', n_clicks=0),
+            html.Button('right', id='r_btn', n_clicks=0),
+            html.Button('zin', id='zin_btn', n_clicks=0),
+            html.Button('zout', id='zout_btn', n_clicks=0)
+
         ],
         brand_href="#",
         color="dark",
         dark=True,
     ),
     # graph
-    html.Center(children=[dcc.Graph(figure=fig,id='globe')]), 
+    html.Div(id='camera-data'),
+    html.Center(children=[dcc.Graph(figure=fig, id='globe')]), 
 
     # storage
-    storage, 
+    #storage, 
 
     # update component
     dcc.Interval(
             id='interval-component',
-            interval=1*10, # in milliseconds
+            interval=10, # in milliseconds
             n_intervals=0)
-],
-style={'backgroundColor': 'black'})
+    ],
+    style={'backgroundColor': 'black',
+            'background-image': 'url("./assets/space.png")',
+            'background-size': '100%',
+            'position': 'fixed',
+            'width': '100%',
+            'height': '100%'})
 
-'''
-dcc.Input(id="X", type="number"),
-            dcc.Input(id="Y", type="number"),
-            dcc.Input(id="Z", type="number")
-            
-dcc.Store(id="Xpos", storage_type='session'),
-    dcc.Store(id="Ypos", storage_type='session'),
-    dcc.Store(id="Zpos", storage_type='session')'''
 
 @app.callback(
-    [Input('interval-component', 'n_intervals'),
-    Input('X', 'n_intervals'),
-    Input('Y', 'n_intervals'),
-    Input('Z', 'n_intervals')],
-    [State('Xpos','value'),
-    State('Ypos','value'),
-    State('Zpos','value')]
+    Output('camera-data', 'children'),
+    Input('interval-component', 'n_intervals'),
+    Input('globe', 'figure'))
+def updateStateVariables(n, layout):
+    layout2 = layout['layout']
+    current_view = layout2['geo']['projection']
+    if current_view.get('scale',None) == None:
+        current_view['scale'] = 0.0
+    else:
+        pass
+    return html.Span([str(current_view)],style={"color": "white"})
 
-    #State("hedge-table-collapse", "is_open")
+#### camera control callbacks
+
+'''
+html.Button('up', id='up_btn', n_clicks=0),
+html.Button('down', id='d_btn', n_clicks=0),
+html.Button('left', id='l_btn', n_clicks=0),
+html.Button('right', id='r_btn', n_clicks=0),
+html.Button('zin', id='zin_btn', n_clicks=0),
+html.Button('zout', id='zout_btn', n_clicks=0)
+'''
+@app.callback(
+    Output('globe', 'figure'),
+    Input('up_btn','n_clicks'),
+    Input('d_btn','n_clicks'),
+    Input('l_btn','n_clicks'),
+    Input('r_btn','n_clicks'),
+    Input('globe', 'figure')
 )
-def updateStateVariables(n, iX ,iY, iZ):
-
-    ## get the current inputs
-
-    ## update the memory for the current inputs
-    
-    ## update the graph's camera coordinates with memory
-
-    input_coords = (iX,iY,iZ)
-    print(f'Input: {input_coords}')
+def move(n_clicks_up, n_clicks_down,n_clicks_left, n_clicks_right, figure):
+    layout = figure['layout']
+    current_view = layout['geo']['projection']
+    if current_view.get('rotation', None) == None:
+        current_view['rotation'] = dict(lon=0, lat=0, roll=0)
+    else:
+        if 'up_btn' == ctx.triggered_id:
+            current_view['rotation']['lat'] += 5
+        elif 'd_btn' == ctx.triggered_id:
+            current_view['rotation']['lat'] -= 5
+        elif 'l_btn' == ctx.triggered_id:
+            current_view['rotation']['lon'] -= 5
+        elif 'r_btn' == ctx.triggered_id:
+            current_view['rotation']['lon'] += 5
+        
+    return figure
 
 
 
 
 if __name__ == '__main__':
-    app.run_server(host= '0.0.0.0',debug=False,port=443)
+    app.run_server(host= '0.0.0.0', debug=False)
