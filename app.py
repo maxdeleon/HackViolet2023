@@ -39,7 +39,7 @@ fig.update_geos(
     showlakes=False, lakecolor="Blue",
     showcountries=True, countrycolor="White",
     showrivers=False, rivercolor="Blue",
-
+    showsubunits=True, subunitcolor="Blue"
 )
 
 storage = html.Div([
@@ -121,7 +121,7 @@ html.Button('zout', id='zout_btn', n_clicks=0)
     Input('r_btn','n_clicks'),
     Input('globe', 'figure')
 )
-def move(n_clicks_up, n_clicks_down,n_clicks_left, n_clicks_right, figure):
+def move(n_clicks_up, n_clicks_down, n_clicks_left, n_clicks_right, figure):
     layout = figure['layout']
     current_view = layout['geo']['projection']
     if current_view.get('rotation', None) == None:
