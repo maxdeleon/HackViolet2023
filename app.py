@@ -159,24 +159,24 @@ def move(n,n_clicks_up, n_clicks_down, n_clicks_left, n_clicks_right, figure):
         elif 'r_btn' == ctx.triggered_id:
             current_view['rotation']['lon'] += 5
     
-    dX, dY = tracker.get_last_delta_x(), tracker.get_last_delta_y()
-    print(dX, dY)
-    factor = 0.10
+        else:
 
-    gestures = tracker.get_last_gesture()
-    #print(gestures)
-    #print(current_view)
-    if gestures != 0:
-        if gestures[0] == gestures[-1] and gestures[0] == ' fist\n':
-            scaled_rotate_x = dX*factor
-            scaled_rotate_y = dY*factor
-            current_view['rotation']['lon'] -= scaled_rotate_x 
-            current_view['rotation']['lat'] -= scaled_rotate_y
+            dX, dY = tracker.get_last_delta_x(), tracker.get_last_delta_y()
+            
+            factor = 0.10
+
+            gestures = tracker.get_last_gesture()
+            #print(gestures)
+            #print(current_view)
+            if gestures != 0:
+                if gestures[0] == gestures[-1] and gestures[0] == ' fist\n':
+                    scaled_rotate_x = dX*factor
+                    scaled_rotate_y = dY*factor
+                    current_view['rotation']['lon'] -= scaled_rotate_x 
+                    current_view['rotation']['lat'] -= scaled_rotate_y
 
         # elif gestures[0] == gestures[-1] and gestures[0] == ' peace\n':
         #     current_view['scale'] += dY
-
-    print('HOKIES')
 
     return figure
 
