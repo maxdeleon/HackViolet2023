@@ -1,1176 +1,641 @@
-314, 1710, fist
-787, 1105, live long
-745, 636, stop
-662, 658, rock
-653, 812, fist
-646, 808, fist
-659, 867, fist
-724, 911, fist
-794, 832, fist
-875, 799, fist
-952, 874, fist
-978, 886, fist
-969, 884, fist
-957, 858, fist
-942, 845, fist
-908, 830, fist
-816, 812, fist
-703, 826, fist
-571, 861, fist
-539, 860, fist
-542, 874, fist
-566, 895, fist
-617, 1022, fist
-926, 1026, stop
-783, 362, stop
-644, 550, rock
-627, 495, fist
-565, 650, fist
-490, 851, fist
-444, 929, fist
-456, 957, fist
-529, 938, fist
-598, 920, fist
-666, 848, fist
-779, 869, fist
-842, 905, fist
-878, 897, fist
-872, 924, fist
-846, 948, fist
-774, 959, fist
-683, 914, fist
-603, 837, fist
-580, 768, fist
-572, 758, fist
-575, 746, fist
-583, 754, fist
-593, 806, fist
-603, 866, fist
-621, 935, fist
-639, 980, fist
-674, 993, fist
-698, 986, fist
-718, 1008, fist
-738, 1022, fist
-761, 1026, fist
-781, 1021, fist
-801, 1009, fist
-813, 1010, fist
-832, 1003, fist
-854, 963, fist
-866, 929, fist
-887, 871, fist
-895, 839, fist
-905, 772, fist
-907, 735, fist
-885, 719, fist
-843, 719, fist
-787, 745, fist
-722, 772, fist
-655, 782, fist
-605, 814, fist
-561, 833, fist
-515, 833, fist
-465, 831, fist
-416, 825, fist
-368, 820, fist
-321, 812, fist
-277, 807, fist
-241, 793, fist
-205, 769, fist
-182, 758, fist
-155, 738, fist
-128, 727, fist
-106, 742, fist
-75, 791, fist
-58, 840, fist
-53, 854, fist
-22, 877, fist
-32, 329, stop
-112, 242, stop
-242, 181, stop
-416, 315, stop
-515, 296, stop
-641, 603, fist
-734, 813, fist
-711, 895, fist
-650, 916, fist
-581, 897, fist
-512, 873, fist
-451, 853, fist
-398, 836, fist
-342, 803, fist
-282, 770, fist
-225, 733, fist
-175, 706, fist
-77, 373, stop
-205, 298, stop
-795, 1726, thumbs down
-511, 1734, thumbs down
-598, 1336, smile
-608, 1344, smile
-557, 1264, thumbs down
-457, 1109, call me
-301, 827, fist
-523, 1881, smile
-441, 1736, smile
-375, 1697, smile
-355, 1786, thumbs down
-317, 2055, smile
-634, 2054, call me
-661, 2247, call me
-744, 1902, fist
-774, 2309, fist
-699, 1859, fist
-151, 1890, smile
-156, 1704, smile
-161, 1571, okay
-92, 1300, smile
-485, 1699, thumbs down
-506, 1483, live long
-495, 1373, live long
-483, 1331, live long
-483, 1326, live long
-481, 1391, live long
-768, 1428, live long
-681, 363, stop
-633, 745, fist
-624, 752, fist
-604, 811, fist
-608, 960, fist
-624, 1199, fist
-627, 1436, fist
-629, 1629, fist
-632, 1693, fist
-637, 1617, fist
-638, 1406, fist
-639, 1097, fist
-639, 816, fist
-646, 582, fist
-644, 408, rock
-644, 338, fist
-638, 384, fist
-626, 575, fist
-621, 863, fist
-630, 1238, fist
-676, 1504, fist
-763, 1451, fist
-824, 1151, okay
-1037, 1264, fist
-1048, 1196, fist
-1015, 1134, fist
-934, 937, fist
-620, 501, fist
-535, 610, fist
-500, 789, fist
-506, 1075, fist
-574, 1237, fist
-647, 1207, fist
-729, 1150, fist
-768, 1051, fist
-769, 946, fist
-730, 801, fist
-641, 673, fist
-546, 746, fist
-481, 893, fist
-470, 1016, fist
-509, 1176, fist
-594, 1235, fist
-676, 1227, fist
-717, 1218, fist
-750, 1163, fist
-810, 1078, fist
-891, 1027, fist
-925, 944, fist
-942, 818, fist
-930, 642, fist
-903, 582, fist
-889, 603, fist
-880, 674, fist
-879, 679, fist
-848, 699, fist
-747, 740, fist
-503, 810, fist
-434, 821, fist
-407, 810, fist
-397, 792, fist
-361, 789, fist
-321, 769, fist
-268, 774, fist
-239, 815, fist
-234, 841, fist
-178, 773, fist
-232, 550, stop
-367, 765, stop
-737, 425, stop
-798, 1017, fist
-818, 1053, fist
-712, 971, fist
-486, 861, fist
-352, 820, fist
-255, 821, fist
-155, 876, fist
-115, 909, fist
-95, 943, fist
-69, 960, fist
--48, 783, stop
-89, 727, stop
-487, 453, stop
-766, 692, rock
-842, 975, fist
-810, 990, fist
-753, 972, fist
-636, 904, fist
-429, 840, fist
-282, 824, fist
-120, 846, fist
-58, 887, fist
-28, 957, fist
-47, 970, fist
-5, 828, stop
-264, 611, stop
-579, 476, stop
-722, 921, fist
-717, 1024, fist
-556, 1020, fist
-322, 1063, fist
-264, 1058, fist
-268, 1059, fist
-229, 1141, fist
-161, 1010, okay
-247, 942, stop
-316, 932, stop
-744, 643, stop
-821, 1090, fist
-627, 1080, fist
-422, 1095, fist
-285, 1099, fist
-184, 1081, fist
-130, 1095, fist
-115, 1074, fist
-120, 1067, fist
-133, 1061, fist
-139, 1081, fist
-55, 847, stop
-134, 591, stop
-220, 937, okay
-341, 820, stop
-660, 686, stop
-796, 954, live long
-860, 930, live long
-848, 941, live long
-828, 972, live long
-802, 1004, live long
-774, 1035, live long
-759, 1058, live long
-758, 1029, live long
-746, 1007, live long
-733, 982, live long
-732, 964, live long
-741, 981, live long
-755, 987, live long
-764, 963, live long
-781, 931, live long
-790, 897, live long
-794, 889, live long
-805, 911, live long
-823, 914, live long
-824, 955, live long
-621, 956, stop
-250, 1151, okay
-649, 1152, live long
-777, 1505, live long
-878, 1592, smile
-863, 1454, peace
-646, 1081, live long
-300, 1159, live long
-333, 1274, live long
-555, 1223, okay
-292, 1657, smile
-288, 1645, smile
-289, 1645, smile
-291, 1634, smile
-203, 1605, smile
-347, 1040, live long
-666, 1069, live long
-803, 1282, live long
-897, 1147, live long
-891, 1074, live long
-842, 956, stop
-783, 1119, okay
-697, 1548, fist
-698, 1572, fist
-697, 1575, fist
-677, 1540, fist
-619, 1522, fist
-516, 1518, fist
-421, 1517, fist
-358, 1460, fist
-307, 1452, fist
-250, 1508, fist
-164, 1590, fist
-78, 1615, fist
--25, 1586, fist
--6, 1616, fist
--18, 1591, fist
--17, 1648, fist
--10, 1676, fist
--7, 1719, fist
-21, 1860, fist
-111, 1912, fist
-202, 1959, fist
-295, 1650, smile
-318, 1644, smile
-315, 1631, smile
-314, 1633, smile
-319, 1632, smile
-320, 1634, smile
-322, 1630, smile
-322, 1629, smile
-326, 1623, smile
-327, 1627, smile
-329, 1624, smile
-322, 1637, smile
-321, 1637, smile
-315, 1647, smile
-317, 1630, smile
-314, 1633, smile
-312, 1631, smile
-314, 1632, smile
-315, 1622, smile
-316, 1630, smile
-320, 1629, smile
-319, 1633, smile
-322, 1627, smile
-323, 1630, smile
-324, 1628, smile
-324, 1628, smile
-322, 1629, smile
-313, 1653, smile
-326, 1619, smile
-320, 1635, smile
-322, 1629, smile
-324, 1623, smile
-324, 1622, smile
-321, 1631, smile
-328, 1630, smile
-325, 1639, smile
-327, 1638, smile
-326, 1639, smile
-323, 1643, smile
-309, 1688, smile
-333, 1667, smile
-340, 1680, smile
-343, 1675, smile
-353, 1678, smile
-358, 1686, smile
-361, 1704, smile
-353, 1712, smile
-342, 1713, smile
-346, 1723, smile
-346, 1738, smile
-340, 1781, smile
-311, 1768, smile
-896, 1498, live long
-940, 1090, live long
-1033, 716, stop
-766, 1301, fist
-736, 1357, fist
-615, 1589, fist
-866, 1253, fist
-895, 1075, fist
-890, 924, fist
-861, 805, fist
-814, 772, fist
-789, 834, fist
-787, 874, fist
-786, 886, fist
-775, 923, fist
-767, 1044, fist
-759, 1185, fist
-753, 1252, fist
-745, 1274, fist
-741, 1257, fist
-800, 1075, rock
-937, 762, stop
-921, 896, stop
-944, 998, stop
-993, 1006, stop
-1016, 941, stop
-1012, 859, stop
-1002, 801, stop
-1023, 976, live long
-1057, 1335, live long
-1201, 1527, live long
-1045, 942, stop
-824, 757, stop
-824, 791, stop
-863, 833, stop
-727, 1301, fist
-707, 1533, fist
-701, 1619, fist
-692, 1657, fist
-692, 1700, fist
-680, 1700, fist
-662, 1828, fist
-617, 2049, fist
-397, 1931, smile
-393, 1905, smile
-392, 1880, smile
-387, 1894, smile
-393, 1886, smile
-393, 1883, smile
-393, 1894, smile
-382, 1900, smile
-385, 1879, smile
-389, 1872, smile
-372, 1902, smile
-375, 1915, smile
-388, 1888, smile
-395, 1877, smile
-393, 1881, smile
-397, 1862, smile
-388, 1866, smile
-392, 1849, smile
-390, 1838, smile
-351, 1904, smile
-339, 1918, smile
-391, 1824, smile
-389, 1832, smile
-384, 1826, smile
-386, 1835, smile
-385, 1819, smile
-378, 1834, smile
-383, 1827, smile
-380, 1835, smile
-370, 1863, smile
-358, 1876, smile
-325, 1954, smile
-288, 1867, smile
-194, 1748, okay
-818, -114, rock
-762, 322, stop
-777, 773, stop
-863, 1083, live long
-915, 1201, live long
-905, 1326, live long
-897, 1582, live long
-909, 1792, rock
-890, 1785, rock
-849, 1711, live long
-687, 1561, live long
-376, 1532, live long
-360, 1822, okay
-707, 1919, smile
-719, 1441, live long
-729, 1646, live long
-803, 1988, live long
-599, 1791, live long
-810, 1541, live long
-851, 1960, live long
-883, 1895, live long
-858, 1842, live long
-862, 1673, live long
-686, 1474, live long
-824, 1868, live long
-844, 1817, live long
-869, 1752, live long
-742, 2104, fist
-679, 2205, fist
-628, 1986, fist
-588, 1577, fist
-571, 1184, fist
-584, 840, fist
-616, 616, fist
-630, 533, fist
-642, 515, fist
-665, 535, fist
-669, 569, fist
-665, 621, fist
-650, 731, fist
-641, 867, fist
-626, 1058, fist
-620, 1296, fist
-618, 1426, fist
-611, 1609, fist
-603, 1760, fist
-594, 1950, fist
-599, 2010, fist
-614, 2118, fist
-620, 2046, fist
-626, 2117, fist
-632, 2011, fist
-658, 2131, fist
-716, 2076, fist
-742, 1996, fist
-768, 1986, fist
-796, 2039, fist
-825, 2056, fist
-852, 1984, fist
-880, 1941, fist
-906, 1914, fist
-947, 1900, fist
-973, 1893, fist
-1006, 1883, fist
-1036, 1823, fist
-1143, 1737, fist
-1033, 1733, fist
-1188, 1425, live long
-1053, 1164, live long
-834, 981, stop
-701, 797, stop
-544, 670, stop
-440, 750, stop
-327, 1709, fist
-380, 1796, fist
-415, 1860, fist
-459, 1821, fist
-503, 1831, fist
-555, 1839, fist
-612, 1872, fist
-650, 1843, fist
-687, 1861, fist
-733, 1845, fist
-778, 1817, fist
-823, 1763, fist
-871, 1750, fist
-916, 1759, fist
-965, 1747, fist
-1000, 1725, fist
-1025, 1684, fist
-1087, 1492, fist
-1148, 1604, fist
-1117, 1573, fist
-1147, 1042, live long
-1094, 888, stop
-1083, 1384, live long
-1066, 752, stop
-857, 634, stop
-672, 749, stop
-613, 941, stop
-543, 1116, stop
-354, 2129, fist
-397, 2246, fist
-420, 2286, fist
-464, 2260, fist
-509, 2244, fist
-557, 2148, fist
-627, 2076, fist
-680, 2185, fist
-720, 2094, fist
-756, 2078, fist
-763, 2123, fist
-808, 1967, fist
-841, 2006, fist
-879, 2126, fist
-1097, 1509, live long
-1124, 1412, live long
-1076, 1211, live long
-982, 1063, stop
-874, 984, stop
-799, 971, stop
-648, 1173, stop
-440, 2027, fist
-469, 2152, fist
-489, 2151, fist
-554, 2160, fist
-644, 2126, fist
-714, 1991, fist
-801, 2162, fist
-855, 2135, fist
-863, 2175, fist
-889, 2029, fist
-922, 2015, fist
-938, 1992, fist
-953, 1952, fist
-973, 1964, fist
-1035, 1877, fist
-1138, 1462, live long
-1081, 1535, live long
-1171, 1466, live long
-1092, 1330, live long
-566, 861, stop
-884, 1237, live long
-577, 1845, fist
-471, 2125, fist
-433, 2146, fist
-470, 2230, fist
-483, 2309, fist
-518, 2342, fist
-505, 2281, fist
-507, 2158, fist
-510, 2171, fist
-504, 2208, fist
-482, 2175, fist
-514, 2189, fist
-519, 2202, fist
-671, 1909, live long
-756, 1570, live long
-783, 1343, live long
-789, 1313, live long
-799, 1310, live long
-801, 1309, live long
-839, 1267, live long
-925, 1178, stop
-980, 1256, live long
-980, 1441, live long
-955, 1776, live long
-458, 1886, smile
-484, 1670, smile
-504, 1669, smile
-512, 1694, fist
-520, 1703, smile
-524, 1722, smile
-546, 1763, smile
-585, 1903, smile
-529, 1682, smile
-536, 1630, okay
-539, 1645, fist
-540, 1703, fist
-558, 1784, smile
-446, 1824, thumbs up
-448, 1346, fist
-467, 1320, fist
-319, 1758, thumbs down
-559, 1070, smile
-560, 987, okay
-547, 979, okay
-541, 941, okay
-544, 924, okay
-546, 901, okay
-553, 914, okay
-559, 939, thumbs up
-577, 945, thumbs up
-604, 1001, thumbs up
-624, 1058, thumbs up
-634, 1095, thumbs up
-640, 1166, smile
-649, 1294, smile
-767, 1666, smile
-767, 1663, smile
-767, 1648, smile
-767, 1642, smile
-764, 1651, smile
-764, 1656, smile
-764, 1655, smile
-765, 1658, smile
-765, 1662, smile
-768, 1672, smile
-767, 1677, thumbs down
-770, 1695, smile
-771, 1698, smile
-775, 1697, smile
-783, 1695, smile
-787, 1681, smile
-802, 1691, smile
-809, 1678, smile
-823, 1652, smile
-840, 1642, smile
-880, 1677, smile
-761, 1592, live long
-668, 1384, live long
-646, 1500, fist
-651, 1502, fist
-663, 1485, fist
-661, 1460, fist
-647, 1442, fist
-634, 1432, fist
-619, 1414, fist
-611, 1418, fist
-607, 1418, fist
-601, 1423, fist
-589, 1440, fist
-587, 1449, fist
-583, 1458, fist
-585, 1459, fist
-585, 1468, fist
-596, 1467, fist
-593, 1786, fist
-331, 1758, thumbs down
-545, 1924, smile
-693, 1639, live long
-677, 1522, live long
-652, 1538, rock
-624, 1525, fist
-602, 1509, fist
-594, 1512, fist
-578, 1570, fist
-569, 1632, fist
-557, 1684, fist
-550, 1718, fist
-544, 1722, fist
-548, 1707, fist
-539, 1661, fist
-509, 1611, fist
-488, 1574, fist
-457, 1557, fist
-426, 1560, fist
-395, 1594, fist
-370, 1631, fist
-351, 1673, fist
-337, 1729, fist
-329, 1762, fist
-316, 1837, fist
-313, 1975, fist
-315, 2026, fist
-345, 2036, fist
-381, 2101, fist
-426, 2144, fist
-451, 2076, fist
-514, 1953, call me
-544, 1887, call me
-594, 1922, call me
-673, 1828, fist
-693, 1803, fist
-703, 1722, fist
-725, 1400, live long
-751, 1277, live long
-771, 1197, live long
-797, 1112, rock
-825, 1110, rock
-836, 1248, fist
-809, 1343, fist
-781, 1383, fist
-772, 1392, fist
-751, 1388, fist
-720, 1392, fist
-698, 1402, fist
-671, 1428, fist
-656, 1449, fist
-637, 1479, fist
-622, 1499, fist
-611, 1506, fist
-594, 1516, fist
-573, 1527, fist
-552, 1544, fist
-529, 1620, fist
-513, 1698, fist
-503, 1766, fist
-493, 1809, fist
-476, 1815, fist
-463, 1846, fist
-435, 1984, fist
-427, 1991, fist
-417, 2026, fist
-396, 2118, fist
-388, 2157, fist
-393, 2106, call me
-569, 2113, call me
-694, 1962, fist
-717, 1939, fist
-732, 1782, fist
-750, 1651, fist
-775, 1534, fist
-803, 1413, fist
-813, 1353, fist
-849, 1172, rock
-902, 991, live long
-956, 846, stop
-980, 868, live long
-899, 1223, fist
-866, 1314, fist
-829, 1306, fist
-774, 1302, fist
-727, 1309, fist
-716, 1311, fist
-695, 1327, fist
-678, 1355, fist
-653, 1391, fist
-634, 1419, fist
-589, 1638, fist
-591, 1764, fist
-588, 2076, fist
-612, 2138, fist
-719, 1755, fist
-712, 1531, fist
-689, 1408, fist
-676, 1344, fist
-668, 1328, fist
-659, 1309, fist
-649, 1283, fist
-637, 1248, fist
-620, 1217, fist
-590, 1338, fist
-583, 1567, fist
-553, 1853, fist
-310, 1684, smile
-802, 1683, live long
-808, 1552, live long
-814, 1418, live long
-818, 1297, live long
-823, 1213, live long
-819, 1185, live long
-810, 1201, live long
-801, 1204, live long
-801, 1194, live long
-800, 1204, live long
-791, 1223, live long
-769, 1278, live long
-725, 1536, fist
-719, 1536, fist
-726, 1481, fist
-685, 1422, fist
-643, 1385, fist
-688, 1005, live long
-720, 1018, live long
-720, 1050, live long
-733, 1091, live long
-743, 1115, live long
-740, 1143, live long
-721, 1143, live long
-715, 1130, live long
-714, 1131, live long
-717, 1148, live long
-722, 1165, live long
-731, 1190, live long
-748, 1248, live long
-763, 1275, live long
-770, 1278, live long
-772, 1251, live long
-770, 1237, live long
-754, 1200, live long
-635, 1433, fist
-614, 1609, fist
-614, 1661, fist
-610, 1744, fist
-602, 1768, fist
-605, 1783, fist
-608, 1778, fist
-616, 1767, fist
-621, 1756, fist
-625, 1725, fist
-624, 1711, fist
-619, 1683, fist
-602, 1675, fist
-584, 1652, fist
-553, 1628, fist
-514, 1610, fist
-491, 1602, fist
-451, 1613, fist
-429, 1711, fist
-427, 1834, fist
-461, 1992, fist
-474, 2138, fist
-515, 2142, fist
-558, 2133, fist
-589, 2108, fist
-634, 2025, fist
-657, 1965, fist
-676, 1833, fist
-700, 1804, fist
-723, 1769, fist
-739, 1732, fist
-743, 1693, fist
-758, 1615, fist
-762, 1563, fist
-761, 1500, fist
-740, 1447, fist
-717, 1433, fist
-694, 1421, fist
-669, 1461, fist
-656, 1501, fist
-646, 1593, fist
-658, 1666, fist
-671, 1734, fist
-684, 1775, fist
-703, 1795, fist
-724, 1812, fist
-741, 1770, fist
-755, 1729, fist
-761, 1656, fist
-758, 1595, fist
-745, 1545, fist
-729, 1520, fist
-710, 1498, fist
-681, 1512, fist
-657, 1530, fist
-638, 1563, fist
-627, 1598, fist
-615, 1661, fist
-613, 1696, fist
-616, 1779, fist
-628, 1840, fist
-662, 1946, fist
-696, 1909, fist
-729, 1832, fist
-754, 1729, fist
-776, 1636, fist
-769, 1591, fist
-751, 1560, fist
-711, 1548, fist
-662, 1640, fist
-627, 1712, fist
-589, 1805, fist
-581, 1881, fist
-596, 1972, fist
-621, 2044, fist
-640, 2090, fist
-691, 2121, fist
-761, 2082, fist
-868, 1582, fist
-832, 1487, fist
-787, 1430, fist
-719, 1430, fist
-664, 1489, fist
-623, 1616, fist
-591, 1729, fist
-565, 1830, fist
-574, 1968, fist
-584, 2061, fist
-603, 2112, fist
-650, 2101, fist
-685, 2077, fist
-731, 2076, fist
-768, 2043, fist
-794, 1931, fist
-819, 1865, fist
-827, 1811, fist
-829, 1779, fist
-820, 1702, fist
-800, 1650, fist
-776, 1616, fist
-732, 1588, fist
-692, 1580, fist
-630, 1591, fist
-579, 1619, fist
-529, 1659, fist
-481, 1692, fist
-462, 1712, fist
-432, 1757, fist
-414, 1806, fist
-405, 1855, fist
-406, 1986, fist
-422, 1980, fist
-439, 1978, fist
-465, 1977, fist
-506, 1977, fist
-548, 1944, fist
-587, 1972, fist
-614, 1969, fist
-641, 1954, fist
-674, 1939, fist
-714, 1924, fist
-733, 1886, fist
-755, 1811, fist
-813, 1742, fist
-826, 1712, fist
-858, 1697, fist
-871, 1653, fist
-886, 1622, fist
-902, 1549, fist
-896, 1508, fist
-891, 1446, fist
-896, 1401, fist
-895, 1361, fist
-894, 1321, fist
-899, 1286, fist
-908, 1262, fist
-893, 1232, rock
-722, 1370, rock
-347, 1921, smile
-257, 2044, smile
-260, 2014, smile
-300, 1909, rock
-340, 1915, rock
-369, 1970, rock
-403, 1998, smile
-505, 1829, smile
-505, 1927, smile
-509, 1958, smile
-518, 1987, rock
-523, 1979, rock
-478, 1841, smile
-478, 1805, smile
-475, 1826, smile
-485, 1821, smile
-483, 1816, live long
-481, 1845, smile
-479, 1837, smile
-475, 1876, smile
-521, 1736, smile
-517, 1781, smile
-515, 1762, smile
-497, 1837, smile
-494, 1855, smile
-511, 1821, smile
-519, 1797, live long
-523, 1793, live long
-510, 1811, live long
-512, 1805, smile
-514, 1794, smile
-518, 1791, live long
-519, 1800, live long
-502, 1827, smile
-671, 1945, smile
-662, 2017, fist
-587, 1966, fist
-566, 2031, call me
-578, 2019, smile
-576, 1894, smile
-568, 1799, smile
-561, 1972, smile
-499, 1878, smile
-827, 1722, live long
-819, 1469, live long
-750, 1355, live long
-642, 1314, live long
-631, 1374, live long
-706, 1449, live long
-763, 1496, live long
-798, 1507, live long
-757, 1471, live long
-654, 1550, rock
-629, 1833, fist
-664, 1830, fist
-675, 1813, fist
-695, 1795, fist
-724, 1753, fist
-723, 1710, fist
-709, 1674, fist
-682, 1625, fist
-666, 1584, fist
-654, 1562, fist
-626, 1560, fist
-600, 1571, fist
-583, 1598, fist
-586, 1649, fist
-603, 1694, fist
-626, 1744, fist
-636, 1774, fist
-663, 1796, fist
-682, 1797, fist
-701, 1787, fist
-718, 1741, fist
-729, 1715, fist
-724, 1687, fist
-715, 1664, fist
-694, 1644, fist
-672, 1625, fist
-645, 1614, fist
-621, 1613, fist
-602, 1634, fist
-592, 1669, fist
-595, 1684, fist
-597, 1699, fist
-599, 1702, fist
-603, 1716, fist
-607, 1735, fist
-612, 1763, fist
-622, 1792, fist
-628, 1788, fist
-633, 1783, fist
-641, 1776, fist
-647, 1773, fist
-654, 1774, fist
-661, 1740, fist
-659, 1697, fist
-642, 1656, fist
-621, 1655, fist
-602, 1707, fist
-600, 1733, fist
-610, 1741, fist
-622, 1723, fist
-627, 1696, fist
-617, 1658, fist
-606, 1654, fist
-596, 1700, fist
-604, 1748, fist
-611, 1754, fist
-620, 1724, fist
-613, 1676, fist
-591, 1690, fist
-587, 1882, fist
-786, 1871, peace
-435, 1659, smile
-436, 1379, fist
-452, 1315, fist
-447, 1340, rock
-452, 1386, fist
-453, 1357, okay
-445, 1284, fist
-458, 1269, fist
-483, 1210, smile
-382, 1151, fist
-419, 1049, fist
-410, 1076, okay
-494, 1073, fist
-499, 1030, peace
-499, 1033, fist
-495, 1052, fist
-625, 1168, okay
-514, 1933, smile
-502, 1818, call me
-503, 1796, smile
-506, 1785, smile
-501, 1803, smile
-498, 1816, smile
-496, 1808, smile
-495, 1813, smile
-492, 1825, smile
-494, 1825, smile
-498, 1818, smile
-502, 1815, smile
-504, 1827, smile
-510, 1845, smile
-511, 1913, call me
-458, 1952, rock
-465, 1878, rock
-462, 1857, rock
-449, 1867, rock
-430, 1864, fist
-416, 1958, fist
-362, 2079, fist
-1023, 1937, smile
-1023, 1939, smile
-1025, 1942, smile
-1050, 1920, fist
-1064, 1930, fist
-1070, 1905, fist
-1092, 1884, fist
-1101, 1892, fist
-1095, 1896, okay
-1090, 1909, okay
-1093, 1940, smile
-1103, 1975, smile
-1110, 1970, smile
-1108, 1945, smile
-1109, 1933, smile
-1111, 1924, smile
-1102, 1923, smile
-1103, 1934, smile
-1100, 1938, smile
-1098, 1930, smile
-1090, 1946, smile
-1100, 1946, smile
-1098, 1969, smile
-1076, 2007, smile
-1079, 2008, smile
-1074, 2021, smile
-1077, 2030, smile
-1076, 2033, smile
-1080, 2025, smile
-1083, 2034, smile
-1092, 2020, smile
-1094, 2022, smile
-1108, 2022, smile
-1100, 2008, smile
-477, 1692, live long
-503, 1515, rock
-501, 1503, rock
-502, 1519, rock
-505, 1539, live long
-497, 1679, rock
-492, 2027, smile
-547, 1862, smile
-540, 1830, rock
-570, 1665, live long
-582, 1597, live long
-592, 1624, live long
-600, 1610, live long
-599, 1694, live long
-602, 1695, live long
-604, 1686, live long
-603, 1692, live long
-600, 1764, live long
-594, 1829, live long
-572, 2043, smile
+670, 922, stop
+680, 957, fist
+691, 829, fist
+692, 903, fist
+661, 1493, fist
+650, 1902, fist
+651, 2100, fist
+648, 1987, fist
+640, 2077, fist
+645, 2038, fist
+649, 2051, fist
+641, 1867, fist
+655, 1450, fist
+665, 916, fist
+607, 294, rock
+399, 463, stop
+500, 436, stop
+537, 866, fist
+482, 933, fist
+454, 931, fist
+427, 942, fist
+406, 945, fist
+384, 974, fist
+424, 700, stop
+488, 496, stop
+614, 573, stop
+626, 824, fist
+673, 938, fist
+670, 939, fist
+635, 941, fist
+583, 946, fist
+536, 911, fist
+490, 907, fist
+448, 909, fist
+409, 925, fist
+376, 933, fist
+345, 935, fist
+317, 932, fist
+294, 927, fist
+273, 911, fist
+259, 912, fist
+244, 920, fist
+178, 883, fist
+247, 533, stop
+372, 502, stop
+453, 467, stop
+556, 723, fist
+493, 726, fist
+435, 714, fist
+384, 718, fist
+340, 747, fist
+306, 781, fist
+277, 800, fist
+253, 805, fist
+227, 789, fist
+207, 748, fist
+199, 677, fist
+213, 693, fist
+191, 669, rock
+271, 379, stop
+490, 570, fist
+564, 413, fist
+618, 515, fist
+608, 598, fist
+584, 803, fist
+565, 983, fist
+553, 1086, fist
+553, 1167, fist
+552, 1235, fist
+550, 1321, fist
+547, 1419, fist
+547, 1491, fist
+548, 1582, fist
+553, 1681, fist
+553, 1767, fist
+547, 1964, fist
+568, 1979, fist
+581, 2088, fist
+583, 2117, fist
+567, 2105, fist
+574, 1993, call me
+572, 2036, fist
+591, 1980, fist
+581, 2006, fist
+590, 1831, fist
+605, 1660, fist
+630, 1392, fist
+694, 310, stop
+630, 837, stop
+606, 1215, fist
+602, 1263, fist
+605, 1145, fist
+630, 899, fist
+788, 450, stop
+789, 680, stop
+782, 806, stop
+731, 892, stop
+638, 1370, fist
+628, 1399, fist
+622, 1394, fist
+651, 1038, fist
+724, -212, stop
+773, -40, stop
+748, 502, stop
+730, 760, stop
+731, 855, stop
+727, 966, live long
+665, 891, rock
+622, 1518, fist
+630, 1494, fist
+638, 1388, fist
+661, 1042, fist
+340, 1930, smile
+375, 1931, call me
+365, 1952, call me
+345, 1937, smile
+325, 1893, smile
+342, 1880, smile
+515, 1899, smile
+548, 1800, smile
+573, 1701, smile
+603, 1547, smile
+613, 1398, smile
+612, 1262, live long
+609, 1130, live long
+606, 1004, live long
+613, 896, live long
+622, 774, live long
+625, 696, live long
+595, 713, stop
+542, 799, stop
+551, 842, fist
+541, 937, fist
+538, 1004, fist
+554, 1024, fist
+563, 1053, fist
+568, 1066, fist
+573, 1078, fist
+572, 1089, fist
+575, 1099, fist
+584, 1110, fist
+605, 1097, fist
+638, 1056, fist
+673, 1034, fist
+697, 1011, fist
+723, 992, fist
+742, 964, fist
+737, 967, fist
+757, 944, fist
+765, 917, fist
+782, 900, fist
+804, 863, fist
+816, 846, fist
+836, 803, fist
+854, 757, fist
+863, 725, fist
+868, 649, fist
+906, 711, fist
+928, 710, fist
+824, 565, stop
+771, 570, stop
+713, 549, stop
+656, 634, stop
+537, 774, stop
+557, 901, fist
+581, 1085, fist
+604, 1007, fist
+643, 848, fist
+665, 796, fist
+688, 768, fist
+704, 768, fist
+719, 787, fist
+720, 795, fist
+746, 808, fist
+759, 780, fist
+751, 684, fist
+756, 677, fist
+775, 714, fist
+784, 647, fist
+827, 670, fist
+838, 649, fist
+877, 644, fist
+975, 607, fist
+802, 651, stop
+759, 672, stop
+723, 694, live long
+689, 720, live long
+662, 734, live long
+614, 748, live long
+569, 775, live long
+503, 858, live long
+437, 1023, fist
+461, 913, fist
+592, 528, fist
+929, 409, stop
+925, 461, stop
+920, 475, stop
+906, 479, stop
+799, 547, live long
+747, 603, stop
+675, 608, live long
+618, 598, live long
+519, 908, fist
+760, 293, stop
+810, 148, stop
+836, 162, stop
+841, 258, stop
+839, 347, stop
+829, 449, stop
+763, 660, live long
+724, 880, okay
+723, 981, live long
+711, 1098, live long
+688, 1146, live long
+599, 1166, peace
+645, 1159, fist
+623, 980, fist
+659, 643, fist
+705, 452, stop
+726, 575, stop
+725, 783, live long
+384, 1200, live long
+382, 1648, smile
+664, 1292, live long
+650, 1280, live long
+653, 1317, live long
+622, 1358, peace
+366, 499, fist
+417, -14, stop
+633, 131, stop
+420, 530, okay
+657, 715, okay
+702, 1161, live long
+685, 1436, smile
+671, 1381, peace
+647, 1272, live long
+625, 1244, live long
+581, 1271, peace
+576, 1239, fist
+591, 1190, fist
+606, 1123, fist
+614, 1057, fist
+618, 877, fist
+567, 329, fist
+591, 225, live long
+596, 152, stop
+590, 119, stop
+585, 142, stop
+590, 157, stop
+609, 13, stop
+645, 345, live long
+692, 1011, live long
+668, 1687, smile
+633, 1535, peace
+610, 1469, live long
+601, 1524, peace
+592, 1643, peace
+747, 1682, peace
+517, 762, live long
+639, 1163, fist
+673, 1240, fist
+651, 1148, fist
+632, 1003, fist
+607, 811, fist
+602, 713, fist
+603, 618, fist
+597, 550, fist
+583, 475, fist
+579, 464, fist
+575, 486, fist
+573, 488, fist
+573, 487, fist
+574, 492, fist
+572, 530, fist
+573, 562, fist
+571, 616, fist
+569, 667, fist
+569, 681, fist
+573, 696, fist
+578, 751, fist
+581, 908, fist
+586, 1040, fist
+595, 1101, fist
+598, 1158, fist
+602, 1197, fist
+606, 1279, fist
+606, 1373, fist
+607, 1416, fist
+606, 1389, fist
+606, 1253, fist
+602, 1135, fist
+599, 992, fist
+602, 856, fist
+606, 741, fist
+610, 711, fist
+610, 783, fist
+602, 972, fist
+606, 1089, fist
+609, 1167, fist
+609, 1304, fist
+609, 1420, fist
+609, 1422, fist
+608, 1316, fist
+612, 1167, fist
+607, 1014, fist
+613, 822, fist
+617, 796, fist
+621, 844, fist
+612, 943, fist
+613, 1070, fist
+614, 1203, fist
+609, 1335, fist
+605, 1453, fist
+602, 1538, fist
+600, 1577, fist
+598, 1609, fist
+599, 1569, fist
+603, 1404, fist
+600, 1205, fist
+601, 893, fist
+603, 844, fist
+600, 886, fist
+599, 1022, fist
+598, 1126, fist
+602, 1280, fist
+607, 1444, fist
+603, 1578, fist
+609, 1655, fist
+613, 1598, fist
+615, 1431, fist
+611, 1223, fist
+612, 1421, fist
+607, 1539, fist
+598, 1626, fist
+592, 1695, fist
+587, 1663, fist
+590, 1517, fist
+584, 1315, fist
+590, 1130, rock
+590, 964, rock
+627, 910, live long
+653, 876, live long
+715, 353, fist
+729, 340, rock
+722, 336, rock
+717, 320, stop
+729, 416, stop
+616, 1416, peace
+583, 1777, call me
+598, 1783, call me
+579, 1807, call me
+580, 1710, call me
+583, 1680, call me
+665, 1527, peace
+641, 1348, live long
+566, 1374, fist
+557, 1397, fist
+564, 1297, fist
+591, 799, peace
+590, 960, peace
+569, 1659, peace
+570, 1814, peace
+575, 1782, peace
+587, 1555, peace
+607, 1107, peace
+605, 1050, peace
+605, 1258, peace
+591, 1181, peace
+596, 1197, peace
+585, 1315, peace
+581, 1477, fist
+651, 1422, smile
+628, 1404, peace
+583, 1277, peace
+600, 1160, fist
+603, 1084, fist
+607, 1025, fist
+607, 883, fist
+611, 587, live long
+614, 508, live long
+617, 428, live long
+606, 367, rock
+606, 408, rock
+546, 325, fist
+629, 212, stop
+637, 404, stop
+613, 972, live long
+511, 851, okay
+599, 17, stop
+647, 1572, fist
+682, 1567, smile
+637, 1782, call me
+587, 1317, thumbs down
+555, 1335, call me
+563, 1375, fist
+589, 1243, rock
+610, 1262, fist
+666, 1267, live long
+718, 1289, live long
+736, 1385, peace
+731, 1368, peace
+728, 1426, peace
+721, 1511, peace
+706, 1540, live long
+680, 1408, live long
+594, 1278, fist
+578, 1037, fist
+587, 676, fist
+586, 672, fist
+609, 610, okay
+627, 660, live long
+661, 680, live long
+654, 729, live long
+650, 773, live long
+650, 774, live long
+653, 746, live long
+664, 736, live long
+682, 760, live long
+699, 772, live long
+646, 698, live long
+574, 737, live long
+517, 858, live long
+498, 1032, live long
+513, 1203, live long
+553, 1311, live long
+602, 1377, live long
+647, 1397, live long
+690, 1339, live long
+725, 1139, live long
+747, 997, live long
+743, 912, live long
+729, 931, live long
+704, 1023, live long
+692, 1161, live long
+697, 1315, live long
+722, 1476, live long
+762, 1498, live long
+787, 1381, live long
+753, 1124, live long
+757, 1318, live long
+715, 1088, live long
+644, 1185, live long
+629, 1338, live long
+620, 1504, live long
+643, 1590, live long
+656, 1675, live long
+665, 1876, live long
+659, 1577, live long
+652, 1233, live long
+641, 1065, live long
+774, 723, live long
+827, 896, live long
+817, 1002, live long
+778, 1092, live long
+764, 1266, live long
+706, 1155, live long
+617, 1257, fist
+594, 1370, fist
+587, 1374, fist
+587, 1348, fist
+589, 1272, fist
+577, 1189, fist
+557, 1182, fist
+545, 1224, fist
+545, 1246, fist
+542, 1261, fist
+529, 1297, fist
+529, 1331, fist
+525, 1366, fist
+515, 1365, fist
+500, 1360, fist
+482, 1358, fist
+469, 1355, fist
+452, 1361, fist
+439, 1361, fist
+440, 1365, fist
+456, 1366, fist
+481, 1365, fist
+521, 1356, fist
+562, 1350, fist
+591, 1328, fist
+632, 1251, fist
+679, 1265, fist
+709, 1269, fist
+760, 1311, fist
+689, 1121, fist
+688, 958, live long
+623, 880, live long
+566, 931, live long
+549, 1082, live long
+567, 1232, live long
+599, 1344, live long
+624, 1332, live long
+634, 1277, live long
+628, 1229, live long
+621, 1223, live long
+631, 1194, live long
+635, 1196, live long
+603, 1223, live long
+573, 1225, live long
+547, 1121, live long
+568, 965, live long
+598, 794, live long
+663, 803, live long
+717, 979, live long
+780, 1052, live long
+786, 1345, live long
+729, 1519, live long
+683, 1510, live long
+536, 1513, fist
+488, 1508, fist
+462, 1340, fist
+469, 1263, fist
+504, 1275, fist
+533, 1293, fist
+581, 1296, fist
+618, 1164, live long
+639, 1192, rock
+649, 1162, rock
+649, 1179, fist
+622, 1237, fist
+603, 1237, fist
+591, 1118, live long
+586, 985, live long
+563, 812, live long
+551, 617, live long
+568, 400, stop
+592, 311, stop
+650, 197, stop
+695, 147, stop
+732, 166, stop
+756, 277, stop
+776, 492, stop
+771, 789, live long
+728, 1205, fist
+609, 1303, fist
+587, 1435, fist
+522, 1414, fist
+498, 1323, fist
+506, 1292, fist
+529, 1293, fist
+543, 1322, fist
+571, 1320, fist
+594, 1311, fist
+612, 1311, fist
+634, 1329, fist
+663, 1307, fist
+678, 1314, fist
+682, 1308, fist
+690, 1330, fist
+712, 1360, fist
+733, 1363, fist
+759, 1361, fist
+771, 1382, fist
+785, 1390, fist
+801, 1438, fist
+786, 1528, fist
+802, 1588, fist
+734, 1672, okay
+715, 1701, okay
+714, 1769, okay
+782, 1737, rock
+776, 1737, live long
+739, 1981, fist
+645, 1834, smile
+627, 1758, smile
+767, 1768, call me
+593, 1765, fist
+568, 1480, fist
+526, 1359, fist
+480, 1332, fist
+448, 1259, fist
+431, 1016, okay
+458, 814, live long
+483, 721, live long
+499, 681, live long
+495, 631, live long
+484, 589, live long
+461, 786, fist
+499, 1015, fist
+585, 56, stop
+563, 1663, smile
+507, 1847, call me
+480, 1773, fist
+475, 1662, fist
+939, 1525, fist
+991, 1507, rock
+967, 1516, rock
+944, 1483, rock
+914, 1468, fist
+585, 269, rock
+658, 189, stop
+581, 275, fist
+589, 1100, live long
+585, 578, stop
+572, 707, live long
+570, 1156, live long
+614, 1249, live long
+628, 1868, call me
+609, 1454, fist
+608, 1444, fist
+612, 1581, fist
+592, 1770, fist
+580, 1764, fist
+560, 1356, live long
+530, 946, fist
+529, 791, fist
+543, 922, fist
+574, 1029, fist
+587, 1228, fist
+596, 1514, call me
+614, 1787, fist
+605, 1860, fist
+623, 1766, fist
+629, 1659, fist
+609, 1315, live long
+599, 1232, fist
+584, 1227, fist
+579, 1358, fist
+577, 1653, call me
+600, 1737, call me
+524, 1710, thumbs down
+326, 1336, thumbs down
+325, 1198, thumbs down
+309, 1215, thumbs down
+304, 1219, rock
+445, 1282, smile
+669, 735, fist
+682, 674, fist
+550, 984, thumbs down
+622, 1766, thumbs down
+601, 1656, thumbs down
+616, 1708, fist
+611, 1756, fist
+595, 1981, fist
+494, 2115, call me
+121, 1025, smile
+965, 1431, call me
+881, 1449, thumbs down
+741, 1832, call me
+553, 1941, thumbs down

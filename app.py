@@ -132,9 +132,9 @@ html.Button('zout', id='zout_btn', n_clicks=0)
 '''
 @app.callback(
     Output('globe', 'figure'),
-    Output('X','value'),
-    Output('Y','value'),
-    Output('Z','value'),
+    # Output('X','value'),
+    # Output('Y','value'),
+    # Output('Z','value'),
     Input('interval-component', 'n_intervals'),
     Input('up_btn','n_clicks'),
     Input('d_btn','n_clicks'),

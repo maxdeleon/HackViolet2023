@@ -6,9 +6,6 @@ tracker = HandGestureTracker()
 
 
 def app_runner():
-    
-
-
     while True:
         print(f'dX:{tracker.get_last_delta_x()}, dY:{tracker.get_last_delta_y()}, commands:{tracker.get_last_gesture()}')
         #print(str(tracker.get_last_delta_x()) + " " + str(tracker.get_last_delta_y()))
