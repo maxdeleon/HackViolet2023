@@ -17,8 +17,8 @@ fig = go.Figure(go.Scattergeo())
 fig.update_geos(projection_type="orthographic")
 
 fig.update_layout(
-                height=750, 
-                width=900,
+                height=750,
+                width=1000,
                 margin={
                         "r":0,
                         "t":5,
@@ -34,12 +34,11 @@ fig.update_layout({
 fig.update_geos(
     resolution=110,
     showcoastlines=False, coastlinecolor="RebeccaPurple",
-    showland=True, landcolor="Green",
-    showocean=True, oceancolor="DarkBlue",
+    showland=True, landcolor="#08b549",
+    showocean=True, oceancolor="#6b7ae7",
     showlakes=False, lakecolor="Blue",
     showcountries=True, countrycolor="White",
     showrivers=False, rivercolor="Blue",
-    showsubunits=True, subunitcolor="Blue"
 )
 
 storage = html.Div([
@@ -83,7 +82,7 @@ app.layout = html.Div([
             n_intervals=0)
     ],
     style={'backgroundColor': 'black',
-            'background-image': 'url("./assets/space.png")',
+            'background-image': 'url("./assets/lazy_dynamic.gif")',
             'background-size': '100%',
             'position': 'fixed',
             'width': '100%',

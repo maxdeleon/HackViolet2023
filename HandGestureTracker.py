@@ -12,12 +12,11 @@ import threading
 import time
 
 class HandGestureTracker():
-
-
     def __init__(self, path_url="data/hand_data.txt"):
         self.line_count = 0
         self.updated_since_last_calc_x = True
         self.updated_since_last_calc_y = True
+        self.updated_since_last_calc_gesture = True
         self.data_file_read = open(path_url, "r")
         self.lines = []
     def main(self):
@@ -85,7 +84,7 @@ class HandGestureTracker():
                     mpDraw.draw_landmarks(frame, handslms, mpHands.HAND_CONNECTIONS)
 
                     # Predict gesture
-                    prediction = model.predict([landmarks])
+                    prediction = model.predict([landmarks],verbose=0)
                     # print(prediction)
                     classID = np.argmax(prediction)
                     className = classNames[classID]
@@ -148,16 +147,31 @@ class HandGestureTracker():
 
         return int(second_last_split[1]) - int(last_split[1])
 
+    def get_last_gesture(self):
+        self.update_lines_file()
+        if self.line_count < 2 or not self.updated_since_last_calc_gesture:
+            return 0
+        self.updated_since_last_calc_gesture = False;
+        last_line = self.lines[self.line_count - 1]
+        second_last_line = self.lines[self.line_count - 2]
+        #last_y = last_line[last_line.index(",") + 1: last_line.rfind(",") - 1]
+        #second_last_y = last_line[second_last_line.index(",") + 1 : second_last_line.rfind(",") - 1]
+        last_split = last_line.split(",")
+        second_last_split = second_last_line.split(",")
+        
+        return (second_last_split[-1], last_split[-1])
+
+
     def update_lines_file(self):
         line = self.data_file_read.readline()
         while not line == "":
             self.updated_since_last_calc_y = True
             self.updated_since_last_calc_x = True
+            self.updated_since_last_calc_gesture = True
             self.lines.append(line)
             line = self.data_file_read.readline()
         self.line_count = len(self.lines)
         line = self.data_file_read.readline()
-
 
 '''
     def app_runner():
@@ -189,7 +203,8 @@ def app_runner():
             print("L: " + lines[len(lines) - 1])
     '''
     while True:
-        print(str(tracker.get_last_delta_x()) + " " + str(tracker.get_last_delta_y()))
+        print(f'dX:{tracker.get_last_delta_x()}, dY:{tracker.get_last_delta_y()}, commands:{tracker.get_last_gesture()}')
+        #print(str(tracker.get_last_delta_x()) + " " + str(tracker.get_last_delta_y()))
         time.sleep(0.4)
 
 
