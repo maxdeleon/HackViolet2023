@@ -1,7 +1,10 @@
 # HackViolet2023
 HackViolet is a 24-hour hackathon hosted by The Association of Women in Computing, a student-run, non-profit organization at Virginia Tech. Through the event, we encourage all individuals to learn about and become change agents for the gender gap in technology by innovating and inspiring with code.
 # Developers
-  - ***Edward Stan "NookRitzia"*** :koala:	
+  - ***Edward Stan "NookRitzia"*** :fire:	
+  - ***Maximo Xavier de Leon***
+  - ***Prapti Singh***
+  - ***Gurkirat Singh***
   
   
   
