@@ -57,4 +57,6 @@ Then
 - Move your hand around in a ***closed fist*** gesture to rotate the globe
 - Additionally, the globe may be rotated using the buttons on the web-application
 
+---
+
 # [***Product Demo Video***](https://www.youtube.com/watch?v=uT_yA7EssrU)
