@@ -6,12 +6,16 @@ import dash_html_components as html
 import dash_bootstrap_components as dbc
 import threading
 from HandGestureTracker import *
+import pandas as pd
+import os
 
 from dash import html, dcc, callback, Input, Output, State, ctx
 # import plotly.express as px
 # df = px.data.gapminder().query("year == 2007")
 
 #,'./assets/'
+
+dataset_path = './datasets/'
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP]) #__name__, use_pages=True, 
 
@@ -32,10 +36,39 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP]) #__name__
                 'dY':tracker.get_last_delta_x(),
                 'gestures':tracker.get_last_gesture()}'''
 
+df1 = pd.read_csv('./datasets/cleaned_merge.csv')
 
-fig = go.Figure(go.Scattergeo())
+overlays = {
+    'Percent of Women in Agriculture Sector': (df1['f_agri'], df1['Longitude'],df1['Latitude'], 'Percentage of Women' ),
+    'Percent of Women in Manufacturing Sector': (df1['f_sec'], df1['Longitude'],df1['Latitude'], 'Percentage of Women' ),
+    'Percent of Women in Services Sector': (df1['f_ser'], df1['Longitude'],df1['Latitude'], 'Percentage of Women' ),
+}
 
-fig.update_geos(projection_type="orthographic")
+fig = go.Figure(data=go.Scattergeo(
+        locationmode = 'ISO-3',
+        lon = df1['Longitude'],
+        lat = df1['Latitude'],
+        text = df1['f_agri'],
+        mode = 'markers',
+        hovertext=[f"Percent of Women Working in Agriculture Sector: {df1['f_agri'].iloc[i]}<br>Percent of Women Working in Manufacturing Sector (%): {df1['f_sec'].iloc[i]}<br>Percent of Women Working in Service Sector (%): {df1['f_ser'].iloc[i]}<br> GDP per Capita: {df1['GDP per Capita'].iloc[i]}<br>Unemployment: {df1['UNEMPR'].iloc[i]}<br>Urbanization rate: {df1['Urbanization rate'].iloc[i]}<br>Population growth: {df1['Population growth'].iloc[i]}<br>Life expectancy: {df1['Life expectancy'].iloc[i]}<br>Fertility: {df1['Fertility'].iloc[i]}" for i in range(df1.shape[0])],
+        marker = dict(
+            size = df1['Urbanization rate'].fillna(1)/3,
+            opacity = 0.8,
+            reversescale = True,
+            autocolorscale = True,
+            #symbol = 'square',
+            line = dict(
+                width=0.5,
+                color='rgba(102, 102, 102)'
+            ),
+            colorscale = 'Blues',
+            cmin = 0,
+            color = df1['Urbanization rate'].fillna(1)/3,
+            cmax = (df1['Urbanization rate'].fillna(1)/3).max(),
+            colorbar_title="Urbanization rate"
+        )))
+
+fig.update_geos(projection_type="orthographic")#,geo = dict(scope='world')
 
 fig.update_layout(
                 height=900,
@@ -74,9 +107,8 @@ app.layout = html.Div([
     # navbar
     dbc.NavbarSimple( 
         children=[
-            dcc.Input(id="X", type="number",placeholder=1),
-            dcc.Input(id="Y", type="number",placeholder=1),
-            dcc.Input(id="Z", type="number",placeholder=1),
+            
+            html.Div(id='current_coords'),
             html.Button('up', id='up_btn', n_clicks=0),
             html.Button('down', id='d_btn', n_clicks=0),
             html.Button('left', id='l_btn', n_clicks=0),
@@ -88,6 +120,7 @@ app.layout = html.Div([
     ),
     # graph
     html.Div(id='camera-data'),
+    #html.Div(dcc.Dropdown([feature for feature in overlays.keys()], list(overlays.keys())[0], id='demo-dropdown')),
     html.Center(children=[dcc.Graph(figure=fig, id='globe')]), 
 
     # storage
@@ -107,6 +140,77 @@ app.layout = html.Div([
             'height': '100%'})
 
 
+## update map overlay
+
+# @app.callback(
+#     Output('globe', 'figure'),
+#     Input('demo-dropdown', 'value'),
+#     Input('globe', 'figure')
+# )
+# def update_output(value, fig):
+    
+#     overlay_name = value
+#     overlay_data = overlays[value][0]
+#     lon = overlays[value][1]
+#     lat = overlays[value][2]
+#     scale_label = overlays[value][3]
+
+#     print(overlay_name)
+
+#     fig.add_trace(data=go.Scattergeo(
+#             locationmode = 'ISO-3',
+#             lon = lon,
+#             lat = lat,
+#             text = overlay_data,
+#             mode = 'markers',
+#             #hovertext=[df1['f_agri']],
+#             hovertemplate=[f'{overlay_name}: {v}' for v in overlay_data],
+#             marker = dict(
+#                 size = overlay_data/2,
+#                 opacity = 0.8,
+#                 reversescale = True,
+#                 autocolorscale = True,
+#                 #symbol = 'square',
+#                 line = dict(
+#                     width=0.5,
+#                     color='rgba(102, 102, 102)'
+#                 ),
+#                 colorscale = 'Blues',
+#                 cmin = 0,
+#                 color = overlay_data,
+#                 cmax = overlay_data.max(),
+#                 colorbar_title=scale_label
+#             )))
+
+    # fig.update_geos(projection_type="orthographic")#,geo = dict(scope='world')
+
+    # fig.update_layout(
+    #                 height=900,
+    #                 width=1200,
+    #                 margin={
+    #                         "r":0,
+    #                         "t":5,
+    #                         "l":0,
+    #                         "b":5
+    #                         })
+
+    # fig.update_layout({
+    #     'plot_bgcolor': 'rgba(0, 0, 0, 0)',
+    #     'paper_bgcolor': 'rgba(0, 0, 0, 0)',
+    # },geo=dict(bgcolor= 'rgba(0,0,0,0)'))
+
+    # fig.update_geos(
+    #     resolution=110,
+    #     showcoastlines=False, coastlinecolor="RebeccaPurple",
+    #     showland=True, landcolor="#08b549",
+    #     showocean=True, oceancolor="#6b7ae7",
+    #     showlakes=False, lakecolor="Blue",
+    #     showcountries=True, countrycolor="White",
+    #     showrivers=False, rivercolor="Blue",
+    # )
+    #return fig
+
+
 @app.callback(
     Output('camera-data', 'children'),
     Input('interval-component', 'n_intervals'),
@@ -118,6 +222,7 @@ def updateStateVariables(n, layout):
         current_view['scale'] = 0.5
     else:
         pass
+
     return html.Span([str(current_view)],style={"color": "white"})
 
 #### camera control callbacks
@@ -132,9 +237,6 @@ html.Button('zout', id='zout_btn', n_clicks=0)
 '''
 @app.callback(
     Output('globe', 'figure'),
-    # Output('X','value'),
-    # Output('Y','value'),
-    # Output('Z','value'),
     Input('interval-component', 'n_intervals'),
     Input('up_btn','n_clicks'),
     Input('d_btn','n_clicks'),
@@ -142,13 +244,13 @@ html.Button('zout', id='zout_btn', n_clicks=0)
     Input('r_btn','n_clicks'),
     Input('globe', 'figure')
 )
-def move(n,n_clicks_up, n_clicks_down, n_clicks_left, n_clicks_right, figure):
+def move(n, n_clicks_up, n_clicks_down, n_clicks_left, n_clicks_right, figure):
     layout = figure['layout']
     current_view = layout['geo']['projection']
     if current_view.get('rotation', None) == None:
         current_view['rotation'] = dict(lon=0, lat=0, roll=0)
     if current_view.get('scale', None) == None:
-        current_view['scale'] = 0.8
+        current_view['scale'] = 0.5
     else:
         if 'up_btn' == ctx.triggered_id:
             current_view['rotation']['lat'] += 5
