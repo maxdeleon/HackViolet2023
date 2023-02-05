@@ -110,7 +110,7 @@ class HandGestureTracker():
                 rect_frame = cv2.rectangle(rect_frame, (x1, y1), (x1 + 5, y1 + 5), (0, 0, (255 * i) / 20), 2)
 
             # Show the final output
-            cv2.imshow("Output", rect_frame)
+            #cv2.imshow("Output", rect_frame)
 
             if cv2.waitKey(1) == ord('q'):
                 break
