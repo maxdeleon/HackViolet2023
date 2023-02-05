@@ -38,8 +38,8 @@ fig = go.Figure(go.Scattergeo())
 fig.update_geos(projection_type="orthographic")
 
 fig.update_layout(
-                height=750,
-                width=1000,
+                height=900,
+                width=1200,
                 margin={
                         "r":0,
                         "t":5,
@@ -80,10 +80,7 @@ app.layout = html.Div([
             html.Button('up', id='up_btn', n_clicks=0),
             html.Button('down', id='d_btn', n_clicks=0),
             html.Button('left', id='l_btn', n_clicks=0),
-            html.Button('right', id='r_btn', n_clicks=0),
-            html.Button('zin', id='zin_btn', n_clicks=0),
-            html.Button('zout', id='zout_btn', n_clicks=0)
-
+            html.Button('right', id='r_btn', n_clicks=0)
         ],
         brand_href="#",
         color="dark",
@@ -135,6 +132,9 @@ html.Button('zout', id='zout_btn', n_clicks=0)
 '''
 @app.callback(
     Output('globe', 'figure'),
+    Output('X','value'),
+    Output('Y','value'),
+    Output('Z','value'),
     Input('interval-component', 'n_intervals'),
     Input('up_btn','n_clicks'),
     Input('d_btn','n_clicks'),
@@ -147,6 +147,8 @@ def move(n,n_clicks_up, n_clicks_down, n_clicks_left, n_clicks_right, figure):
     current_view = layout['geo']['projection']
     if current_view.get('rotation', None) == None:
         current_view['rotation'] = dict(lon=0, lat=0, roll=0)
+    if current_view.get('scale', None) == None:
+        current_view['scale'] = 0.8
     else:
         if 'up_btn' == ctx.triggered_id:
             current_view['rotation']['lat'] += 5
@@ -162,8 +164,8 @@ def move(n,n_clicks_up, n_clicks_down, n_clicks_left, n_clicks_right, figure):
     factor = 0.10
 
     gestures = tracker.get_last_gesture()
-    print(gestures)
-    print(current_view['rotation'])
+    #print(gestures)
+    #print(current_view)
     if gestures != 0:
         if gestures[0] == gestures[-1] and gestures[0] == ' fist\n':
             scaled_rotate_x = dX*factor
@@ -171,8 +173,8 @@ def move(n,n_clicks_up, n_clicks_down, n_clicks_left, n_clicks_right, figure):
             current_view['rotation']['lon'] -= scaled_rotate_x 
             current_view['rotation']['lat'] -= scaled_rotate_y
 
-        elif gestures[0] == gestures[-1] and gestures[0] == ' peace\n':
-            current_view['scale'] += dY*0.1
+        # elif gestures[0] == gestures[-1] and gestures[0] == ' peace\n':
+        #     current_view['scale'] += dY
 
     print('HOKIES')
 
