@@ -118,7 +118,7 @@ def updateStateVariables(n, layout):
     layout2 = layout['layout']
     current_view = layout2['geo']['projection']
     if current_view.get('scale',None) == None:
-        current_view['scale'] = 0.0
+        current_view['scale'] = 0.5
     else:
         pass
     return html.Span([str(current_view)],style={"color": "white"})
@@ -135,13 +135,14 @@ html.Button('zout', id='zout_btn', n_clicks=0)
 '''
 @app.callback(
     Output('globe', 'figure'),
+    Input('interval-component', 'n_intervals'),
     Input('up_btn','n_clicks'),
     Input('d_btn','n_clicks'),
     Input('l_btn','n_clicks'),
     Input('r_btn','n_clicks'),
     Input('globe', 'figure')
 )
-def move(n_clicks_up, n_clicks_down, n_clicks_left, n_clicks_right, figure):
+def move(n,n_clicks_up, n_clicks_down, n_clicks_left, n_clicks_right, figure):
     layout = figure['layout']
     current_view = layout['geo']['projection']
     if current_view.get('rotation', None) == None:
@@ -155,8 +156,25 @@ def move(n_clicks_up, n_clicks_down, n_clicks_left, n_clicks_right, figure):
             current_view['rotation']['lon'] -= 5
         elif 'r_btn' == ctx.triggered_id:
             current_view['rotation']['lon'] += 5
-        
-        print('HOKIES')
+    
+    dX, dY = tracker.get_last_delta_x(), tracker.get_last_delta_y()
+    print(dX, dY)
+    factor = 0.10
+
+    gestures = tracker.get_last_gesture()
+    print(gestures)
+    print(current_view['rotation'])
+    if gestures != 0:
+        if gestures[0] == gestures[-1] and gestures[0] == ' fist\n':
+            scaled_rotate_x = dX*factor
+            scaled_rotate_y = dY*factor
+            current_view['rotation']['lon'] -= scaled_rotate_x 
+            current_view['rotation']['lat'] -= scaled_rotate_y
+
+        elif gestures[0] == gestures[-1] and gestures[0] == ' peace\n':
+            current_view['scale'] += dY*0.1
+
+    print('HOKIES')
 
     return figure
 
@@ -180,23 +198,31 @@ def move(n_clicks_up, n_clicks_down, n_clicks_left, n_clicks_right, figure):
 #                 'gestures':tracker.get_last_gesture()}
 
 
-@app.callback(
-    #Output('camera-data', 'figure'),
-    Input('interval-component', 'n_intervals'),
-    Input('globe', 'figure'))
-def gestureControl(n, layout):
-    layout = layout['layout']
-    current_view = layout['geo']['projection']
-    if current_view.get('rotation', None) == None:
-        current_view['rotation'] = dict(lon=0, lat=0, roll=0)
-    else:
+# @app.callback(
+#     Output('camera-data', 'figure'),
+#     Input('interval-component', 'n_intervals'),
+#     Input('globe', 'figure'))
+# def gestureControl(n, figure):
+#     layout = layout['layout']
+#     current_view = layout['geo']['projection']
+#     if current_view.get('rotation', None) == None:
+#         current_view['rotation'] = dict(lon=0, lat=0, roll=0)
+#     else:
+#         pass
+#     dX, dY = tracker.get_last_delta_x(), tracker.get_last_delta_y()
+#     print(dX, dY)
+#     current_view['rotation']['lon'] += dX
+#     current_view['rotation']['lat'] += dY
+#         #gestures = tracker.get_last_gesture()
 
-        gestures = tracker.get_last_gesture()
+#         # if gestures != 0:
+#         #     if gestures[0] == gestures[-1] and gestures[0] == ' fist\n':
+#         #         current_view['rotation']['lon'] += tracker.get_last_delta_x()
+#         #         current_view['rotation']['lat'] += tracker.get_last_delta_y()
+#         # else:
+#         #     pass
+#     return layout
 
-        print(gestures)
-        # if gestures[0] == gestures[-1] and gestures[0] == 'fist':
-        #     current_view['rotation']['lon'] += tracker.get_last_delta_x()
-        #     current_view['rotation']['lat'] += tracker.get_last_delta_y()
 
 def runserver():
     app.run_server(host= '0.0.0.0', debug=False)
