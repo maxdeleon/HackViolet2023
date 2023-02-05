@@ -6,8 +6,6 @@ HackViolet is a 24-hour hackathon hosted by The Association of Women in Computin
   - ***Prapti Singh***
   - ***Gurkirat Singh***
   
-  
-  
 # What ViMap Does :earth_americas:
 **ViMap** is an application that displays aggregated data on a 3-dimensional globe that has the ability to be controlled with 
 a user's hand movement captured from a webcam.
@@ -59,3 +57,4 @@ Then
 - Move your hand around in a ***closed fist*** gesture to rotate the globe
 - Additionally, the globe may be rotated using the buttons on the web-application
 
+# [***Product Demo Video***](https://www.youtube.com/watch?v=uT_yA7EssrU)
