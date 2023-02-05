@@ -4,13 +4,34 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 import dash_bootstrap_components as dbc
-from dash import html, dcc, callback, Input, Output, State, ctx
+import threading
+from HandGestureTracker import *
 
+from dash import html, dcc, callback, Input, Output, State, ctx
 # import plotly.express as px
 # df = px.data.gapminder().query("year == 2007")
 
 #,'./assets/'
+
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP]) #__name__, use_pages=True, 
+
+'''class CustomThread(threading.Thread):
+    # constructor
+    def __init__(self):
+        # execute the base constructor
+        threading.Thread.__init__(self,daemon=True)
+        # set a default value
+        self.value = None
+
+    # function executed in a new thread
+    def run(self):
+        # block for a moment
+        time.sleep(1)
+        # store data in an instance variable
+        self.value = {'dX':tracker.get_last_delta_x(), 
+                'dY':tracker.get_last_delta_x(),
+                'gestures':tracker.get_last_gesture()}'''
+
 
 fig = go.Figure(go.Scattergeo())
 
@@ -135,10 +156,68 @@ def move(n_clicks_up, n_clicks_down, n_clicks_left, n_clicks_right, figure):
         elif 'r_btn' == ctx.triggered_id:
             current_view['rotation']['lon'] += 5
         
+        print('HOKIES')
+
     return figure
 
 
+# # custom thread
+# class CustomThread(threading.Thread):
+#     # constructor
+#     def __init__(self):
+#         # execute the base constructor
+#         threading.Thread.__init__(self,daemon=True)
+#         # set a default value
+#         self.value = None
+
+#     # function executed in a new thread
+#     def run(self):
+#         # block for a moment
+#         time.sleep(1)
+#         # store data in an instance variable
+#         self.value = {'dX':tracker.get_last_delta_x(), 
+#                 'dY':tracker.get_last_delta_x(),
+#                 'gestures':tracker.get_last_gesture()}
+
+
+@app.callback(
+    #Output('camera-data', 'figure'),
+    Input('interval-component', 'n_intervals'),
+    Input('globe', 'figure'))
+def gestureControl(n, layout):
+    layout = layout['layout']
+    current_view = layout['geo']['projection']
+    if current_view.get('rotation', None) == None:
+        current_view['rotation'] = dict(lon=0, lat=0, roll=0)
+    else:
+
+        gestures = tracker.get_last_gesture()
+
+        print(gestures)
+        # if gestures[0] == gestures[-1] and gestures[0] == 'fist':
+        #     current_view['rotation']['lon'] += tracker.get_last_delta_x()
+        #     current_view['rotation']['lat'] += tracker.get_last_delta_y()
+
+def runserver():
+    app.run_server(host= '0.0.0.0', debug=False)
 
 
 if __name__ == '__main__':
-    app.run_server(host= '0.0.0.0', debug=False)
+    tracker = HandGestureTracker()
+    dash_server_thread = threading.Thread(target=runserver, daemon=True)
+    tracker_thread = threading.Thread(target=tracker.main, daemon=True)
+    
+    # app_runner_thread = threading.Thread(target=app_runner, daemon=False)
+    
+    dash_server_thread.start()
+    tracker_thread.start()
+    # app_runner_thread.start()
+
+    dash_server_thread.join()
+    tracker_thread.join()
+    # app_runner_thread.join()
+
+
+
+
+    #app.run_server(host= '0.0.0.0', debug=False)

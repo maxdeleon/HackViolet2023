@@ -187,37 +187,37 @@ class HandGestureTracker():
         
 
 '''
-print("test1")
-tracker = HandGestureTracker()
-def app_runner():
-    '''
-    data_file = open("data/hand_data.txt", "r")
-    data_file.flush()
-    lines = []
-    while True:
-        line = data_file.readline()
-        if not line == "":
-            lines.append(line)
-            time.sleep(0.1)
-        if len(lines) > 0:
-            print("L: " + lines[len(lines) - 1])
-    '''
-    while True:
-        print(f'dX:{tracker.get_last_delta_x()}, dY:{tracker.get_last_delta_y()}, commands:{tracker.get_last_gesture()}')
-        #print(str(tracker.get_last_delta_x()) + " " + str(tracker.get_last_delta_y()))
-        time.sleep(0.4)
+# print("test1")
+# tracker = HandGestureTracker()
+# def app_runner():
+#     '''
+#     data_file = open("data/hand_data.txt", "r")
+#     data_file.flush()
+#     lines = []
+#     while True:
+#         line = data_file.readline()
+#         if not line == "":
+#             lines.append(line)
+#             time.sleep(0.1)
+#         if len(lines) > 0:
+#             print("L: " + lines[len(lines) - 1])
+#     '''
+#     while True:
+#         print(f'dX:{tracker.get_last_delta_x()}, dY:{tracker.get_last_delta_y()}, commands:{tracker.get_last_gesture()}')
+#         #print(str(tracker.get_last_delta_x()) + " " + str(tracker.get_last_delta_y()))
+#         time.sleep(0.4)
 
 
 
-print("test2")
-#print(tracker.get_last_delta_x())
+# print("test2")
+# #print(tracker.get_last_delta_x())
 
 
-thread_1 = threading.Thread(target=tracker.main, daemon=True)
-thread_2 = threading.Thread(target=app_runner, daemon=False)
+# thread_1 = threading.Thread(target=tracker.main, daemon=True)
+# thread_2 = threading.Thread(target=app_runner, daemon=False)
 
-thread_1.start()
-thread_2.start()
+# thread_1.start()
+# thread_2.start()
 
-thread_1.join()
-thread_2.join()
+# thread_1.join()
+# thread_2.join()
